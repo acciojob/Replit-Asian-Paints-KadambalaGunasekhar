@@ -1,8 +1,8 @@
 /*  your css code here. If applicable */
-body {
+	body {
             font-family: Arial, sans-serif;
             text-align: center;
-        }
+		  }
 
         #grid-container {
             display: grid;

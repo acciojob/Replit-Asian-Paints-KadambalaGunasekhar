@@ -1,7 +1,6 @@
 //your JS code here. If required.
 const gridItems = document.querySelectorAll("#grid-container div");
 
-        // Add grid-item class
         gridItems.forEach(item => {
             item.classList.add("grid-item");
         });
@@ -17,21 +16,21 @@ const gridItems = document.querySelectorAll("#grid-container div");
             const blockId = blockInput.value;
             const color = colorInput.value;
 
-            // Make all blocks transparent first
+           
             gridItems.forEach(item => {
                 item.style.backgroundColor = "transparent";
             });
 
-            // Find the selected block
+            
             const selectedBlock = document.getElementById(blockId);
 
-            // Apply the color
+            
             if (selectedBlock && blockId >= 1 && blockId <= 9 && color !== "") {
                 selectedBlock.style.backgroundColor = color;
             }
         });
 
-        // Reset all blocks
+        
         resetButton.addEventListener("click", function () {
 
             gridItems.forEach(item => {
